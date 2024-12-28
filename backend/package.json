@@ -1,0 +1,30 @@
+{
+  "name": "ibsense-backend",
+  "version": "1.0.0",
+  "description": "Backend for IBSense AI - powered with MongoDB and Express.js",
+  "main": "api/index.js",
+  "scripts": {
+    "start": "node api/index.js",
+    "dev": "nodemon api/index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.8.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "engines": {
+    "node": ">=14.x"
+  },
+  "keywords": [
+    "ibsense",
+    "backend",
+    "mongodb",
+    "express"
+  ],
+  "author": "Your Name",
+  "license": "ISC"
+}
