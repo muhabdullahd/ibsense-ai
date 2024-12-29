@@ -35,5 +35,5 @@ app.get('/', (req, res) => {
   res.send('Welcome to the Backend Server!');
 });
 
-// Export the app as a handler for Vercel
-module.exports = app;
+// Start Server - Bind to the correct port
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
