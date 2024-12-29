@@ -9,7 +9,7 @@ app.use(express.json());
 // Debug: Log the MONGO_URI
 console.log('MongoDB Connection String:', process.env.MONGO_URI);
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000;
 
 // MongoDB connection
 const MONGO_URI = process.env.MONGO_URI;
