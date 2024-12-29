@@ -3,12 +3,6 @@
 import { useState } from 'react';
 
 // Define the form data type
-interface FormData {
-  symptoms: string;
-  diet: string;
-  sleepHours: string;
-  exercise: string;
-}
 interface TestData {
   message: string; // Adjust according to your backend's response
 }
