@@ -2,6 +2,17 @@
 
 import { useState } from 'react';
 
+// Define the form data type
+interface FormData {
+  symptoms: string;
+  diet: string;
+  sleepHours: string;
+  exercise: string;
+}
+interface TestData {
+  message: string; // Adjust according to your backend's response
+}
+
 export default function Home() {
   const [formData, setFormData] = useState({
     symptoms: '',
@@ -9,9 +20,12 @@ export default function Home() {
     sleepHours: '',
     exercise: '',
   });
+  // const [testData, setTestData] = useState<null | any>(null); // To store test API response
+  // const [testError, setTestError] = useState<string | null>(null); // To store test API error
 
-  const [testData, setTestData] = useState<null | any>(null); // To store test API response
-  const [testError, setTestError] = useState<string | null>(null); // To store test API error
+  const [testData, setTestData] = useState<TestData | null>(null); // Set the correct type for test data
+  const [testError, setTestError] = useState<string | null>(null); // Set the error type as a string or null
+
 
   // Form submission handler
   const handleSubmit = async (e: React.FormEvent) => {
